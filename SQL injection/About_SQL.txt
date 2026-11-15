@@ -1,1 +1,14 @@
-SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. 
+<h3>SQL Injection (SQLi)</h3>
+
+<p>
+  SQL Injection is a web security vulnerability that allows attackers
+  to manipulate SQL queries and gain unauthorized access to a database.
+</p>
+
+<h4>Impacts:</h4>
+<ul>
+  <li>Access sensitive or unauthorized data.</li>
+  <li>Modify or delete database records.</li>
+  <li>Compromise the underlying server.</li>
+  <li>Perform Denial-of-Service (DoS) attacks.</li>
+</ul>
