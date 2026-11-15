@@ -1,14 +1,59 @@
-<h3>SQL Injection (SQLi)</h3>
+### SQL Injection (SQLi)
 
-<p>
-  SQL Injection is a web security vulnerability that allows attackers
-  to manipulate SQL queries and gain unauthorized access to a database.
-</p>
+SQL Injection is a web security vulnerability that allows attackers to manipulate SQL queries to gain unauthorized access to a database.
 
-<h4>Impacts:</h4>
-<ul>
-  <li>Access sensitive or unauthorized data.</li>
-  <li>Modify or delete database records.</li>
-  <li>Compromise the underlying server.</li>
-  <li>Perform Denial-of-Service (DoS) attacks.</li>
-</ul>
+**Impacts:**
+- Access sensitive or unauthorized data.
+- Modify or delete database records.
+- Compromise the underlying server.
+- Perform Denial-of-Service (DoS) attacks.
+
+### SQL Injection Vulnerability Detection
+
+SQL Injection can be detected manually by testing different application input points or automatically using Burp Scanner.
+
+**Manual Testing Methods:**
+
+1. **Single Quote (`'`):** Check for SQL errors or unusual responses.
+2. **SQL Syntax:** Use SQL-specific syntax and compare application responses.
+3. **Boolean-Based:** Use TRUE (`OR 1=1`) and FALSE (`OR 1=2`) conditions to identify response differences.
+4. **Time-Based:** Use time-delay payloads (e.g., `SLEEP(5)`) and observe response time.
+5. **OAST:** Monitor external network interactions triggered by SQL queries.
+
+**Automated Detection:**
+- **Burp Scanner:** Automatically detects SQL injection vulnerabilities in web applications.
+
+### SQL Injection in Different Parts of a Query
+
+SQL Injection commonly occurs in the `WHERE` clause of a `SELECT` query, but it can also happen in other parts of SQL queries.
+
+**Common Injection Points:**
+
+1. **UPDATE Statement:** Within updated values or the `WHERE` clause.
+2. **INSERT Statement:** Within inserted values.
+3. **SELECT Statement:** Within table names or column names.
+4. **ORDER BY Clause:** Within sorting conditions.
+
+### SQL Injection Examples
+
+Common types of SQL Injection attacks include:
+
+1. **Retrieving Hidden Data:** Modifying SQL queries to retrieve hidden or additional data.
+2. **Subverting Application Logic:** Changing SQL queries to interfere with the application's normal logic.
+3. **UNION Attacks:** Using the `UNION` operator to retrieve data from other database tables.
+4. **Blind SQL Injection:** Extracting information by analyzing application responses when query results are not directly displayed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
