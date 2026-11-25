@@ -9,10 +9,10 @@
 
 3. **Determine the Number of Columns:** Use `ORDER BY` to test the number of columns.
 
-- `ORDER BY 1` – Success
-- `ORDER BY 2` – Success
-- `ORDER BY 3` – Success
-- `ORDER BY 4` – Error
+- `' ORDER BY 1` – Success
+- `' ORDER BY 2` – Success
+- `' ORDER BY 3` – Success
+- `' ORDER BY 4` – Error
 
 **Result:** The query returns three columns.
 
