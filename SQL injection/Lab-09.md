@@ -12,9 +12,9 @@ Retrieve the administrator's password from the `users` table and log in as admin
 
 3. **Determine the Number of Columns:** Use `ORDER BY` to identify the column count.
 
-- `ORDER BY 1` – Success
-- `ORDER BY 2` – Success
-- `ORDER BY 3` – Error
+- `' ORDER BY 1` – Success
+- `' ORDER BY 2` – Success
+- `' ORDER BY 3` – Error
 
 **Result:** The query returns two columns.
 
